@@ -37,8 +37,8 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                right: 30px;
+                top: 28px;
             }
 
             .content {
@@ -50,17 +50,17 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #C0C0C0;
                 padding: 0 25px;
                 font-size: 12px;
-                font-weight: 600;
+                font-weight: 500;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
         </style>
     </head>
@@ -69,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
